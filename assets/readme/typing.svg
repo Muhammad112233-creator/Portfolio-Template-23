@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="120" viewBox="0 0 880 120" font-family="monospace">
+  <rect width="880" height="120" rx="10" fill="#0b0b0c"/>
+  <rect width="880" height="26" rx="10" fill="#1b1b22"/>
+  <circle cx="18" cy="13" r="5" fill="#ff5f57"/>
+  <circle cx="36" cy="13" r="5" fill="#febc2e"/>
+  <circle cx="54" cy="13" r="5" fill="#28c840"/>
+  <text x="440" y="17" text-anchor="middle" font-size="11" fill="#8f8f96">alexos — boot.log</text>
+  <g font-size="16">
+    <text x="20" y="56" fill="#c6ff3a">$ boot desktop.exe
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.32;0.98;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="250" y="56" fill="#8f8f96">✔ 16 apps loaded · 0 viruses found
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.08;0.1;0.34;0.36;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="20" y="80" fill="#c6ff3a">$ install --update 2026
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.36;0.38;0.7;0.72;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="230" y="80" fill="#8f8f96">reaching 88 MPH · 1.21 gigawatts
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.46;0.48;0.72;0.74;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="20" y="104" fill="#c6ff3a">$ open portfolio --modern
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.76;0.78;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="248" y="104" fill="#8f8f96">now entering the future…
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.84;0.86;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <rect x="470" y="92" width="10" height="16" fill="#c6ff3a">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

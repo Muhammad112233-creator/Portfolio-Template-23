@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Carter — Designer &amp; Creative Developer</title>
+<meta name="description" content="Alex Carter, designer and creative developer. A portfolio that boots like it is 1996 and updates itself to 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230a8a8a'/%3E%3Ctext x='2' y='13' font-family='monospace' font-size='12' font-weight='bold' fill='%23c6ff3a'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Pixelify+Sans:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Archivo:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ INTRO SPLASH ============ -->
+<div id="intro">
+  <div class="intro-box">
+    <div class="intro-logo">A<span>OS</span>&nbsp;’96</div>
+    <p class="intro-tag">Design, Code &amp; Motion · rebuilt for 2026</p>
+    <p class="intro-press blink">✦ click anywhere or press any key to start ✦</p>
+  </div>
+</div>
+
+<!-- ============ RETRO DESKTOP ============ -->
+<div id="desk">
+  <div id="icons"></div>
+  <!-- windows are created here by js/app.js -->
+</div>
+
+<!-- Did-you-know tip popup -->
+<div id="tip" class="win tip">
+  <div class="tbar"><span class="ti">✦ Did you know?</span><span class="tbtn" data-x>✕</span></div>
+  <div class="tbody"><p id="tiptxt">The first website ever published is still online today.</p>
+    <div class="trow"><button class="btn" id="tipnext">Next tip →</button><button class="btn" data-x>Close</button></div>
+  </div>
+</div>
+
+<!-- Start menu -->
+<nav id="startmenu" aria-label="Start menu"></nav>
+
+<!-- Taskbar -->
+<footer id="taskbar">
+  <button id="startbtn" class="btn"><span class="flag">✦</span> Start</button>
+  <div id="tasks"></div>
+  <button id="updbtn" class="btn" title="Install the 2026 update">⟳ 2026</button>
+  <div id="clock">9:41 AM</div>
+</footer>
+
+<!-- Update dialog -->
+<div id="upddlg" class="win dlg">
+  <div class="tbar"><span class="ti">✦ AlexOS Update</span><span class="tbtn" data-x>✕</span></div>
+  <div class="tbody">
+    <p><b>A newer version of this portfolio is available.</b></p>
+    <p class="dim">AlexOS ’96 → <b>2026 Edition</b></p>
+    <div class="trow"><button class="btn" id="updgo">Install update ⟳</button><button class="btn" data-x>Remind me later</button></div>
+  </div>
+</div>
+
+<!-- Install overlay -->
+<div id="install">
+  <div class="inst-card win">
+    <div class="tbar"><span class="ti">AlexOS Setup</span></div>
+    <div class="tbody">
+      <h2>Installing update…</h2>
+      <p class="dim" id="instmsg">Migrating 1996 → 2026</p>
+      <div class="pbar"><div class="pfill" id="pfill"></div></div>
+      <p class="pct" id="instpct">0%</p>
+    </div>
+  </div>
+</div>
+
+<!-- 2026 entry glitch -->
+<div id="entry26"><h2>Now entering</h2><div class="big">2026</div><p>Loading the modern web…</p></div>
+
+<!-- Time travel sequence -->
+<div id="tt">
+  <canvas id="ttcv"></canvas>
+  <div class="tt-date" id="ttdate">01.01.1996</div>
+  <div class="tt-center">
+    <h2>Creativity Is Timeless</h2>
+    <p>entering the vortex…</p>
+  </div>
+  <div class="tt-gauges">
+    <div class="ttg"><span class="lbl">Speed</span><span class="val"><b id="ttmph">0.0</b> MPH</span></div>
+    <div class="ttg"><span class="lbl">Power</span><span class="val"><b id="ttgw">0.00</b> GIGAWATTS</span></div>
+  </div>
+  <div class="tt-flash" id="ttflash"></div>
+</div>
+
+<!-- Screensaver -->
+<div id="saver">
+  <canvas id="savercv"></canvas>
+  <div class="saver-msg"><b>✦ AlexOS</b><br>Move the mouse or press a key to wake…</div>
+</div>
+
+<!-- Shutdown -->
+<div id="shutdown">
+  <div class="sd-box">
+    <p class="sd-big">It’s now safe to <b>build something</b><br>worth remembering.</p>
+    <button id="reboot">← Restart AlexOS</button>
+  </div>
+</div>
+
+<!-- ============ MODERN 2026 ============ -->
+<main id="modern">
+  <div class="mprog" id="mprog"></div>
+  <div class="maurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <nav class="mnav">
+    <span class="mbrand" id="mbrand">Alex Carter</span>
+    <div class="mlinks">
+      <a href="#mwork">Work</a>
+      <a href="#mabout">About</a>
+      <a href="#mcontact">Contact</a>
+      <span class="back96" id="back96">⟲ Back to ’96</span>
+    </div>
+  </nav>
+
+  <section class="mhero">
+    <canvas class="mfield" id="mfield" aria-hidden="true"></canvas>
+    <h1 class="sr">Alex Carter</h1>
+    <div class="meye">Designer &amp; Creative Developer · Oslo · 2026</div>
+    <div class="mscrollcue">Scroll ↓</div>
+  </section>
+
+  <section class="mstate rv">
+    <h2 class="mbig">Designing the products of today that define <em>tomorrow.</em></h2>
+  </section>
+
+  <section class="mcaps rv">
+    <div class="mlabel">What I Do</div>
+    <div class="mcaps-grid">
+      <div class="mcap">
+        <h3>Design &amp; Motion</h3>
+        <p>UI &amp; UX design · Art direction · Design systems · Motion &amp; interaction · Prototyping · 3D &amp; WebGL scenes · Brand identity</p>
+      </div>
+      <div class="mcap">
+        <h3>Code &amp; Build</h3>
+        <p>Front-end architecture · Creative development · React &amp; TypeScript · WebGL &amp; shaders · Performance · Accessibility</p>
+      </div>
+      <div class="mcap">
+        <h3>Leadership</h3>
+        <p>Product strategy · Team mentorship · Cross-functional leadership · Stakeholder communication · Design operations</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mcloud" id="mcloud">
+    <div class="mcloud-stage">
+      <canvas class="mcloud-cv" id="mcloudcv" aria-hidden="true"></canvas>
+      <div class="mcloud-flash" aria-hidden="true"></div>
+      <h2 class="mcloud-final" aria-hidden="true"><span class="l1">I Craft&nbsp;</span><span class="l2">Experiences.</span></h2>
+    </div>
+  </section>
+
+  <section class="mwork rv" id="mwork">
+    <div class="mlabel">Selected Work · 8 projects</div>
+    <div class="mswipe" id="mswipe">Swipe to explore →</div>
+    <div class="mgrid" id="mgrid"></div>
+    <div class="mdots" id="mdots"></div>
+  </section>
+
+  <section class="mabout rv" id="mabout">
+    <div class="mportrait"><img src="assets/img/portrait.jpg" alt="Illustrated portrait of Alex Carter"></div>
+    <div class="mabout-txt">
+      <h2>I make things people genuinely love to use.</h2>
+      <p>My work lives where design, code, and storytelling meet — shaping how a product looks and feels, then building the front-end that makes it real. I turn fuzzy ideas into interfaces people understand, remember, and come back to.</p>
+      <p>I have shipped design systems used by entire product teams, built interactive experiences that push browsers to their limits, and led small teams through big ambiguous launches. Craft and pragmatism, in equal measure — always pointed at what comes next.</p>
+      <p><span class="acc">Currently:</span> Senior Creative Developer at Studio Nord (2024–present), leading design engineering for interactive client work across fintech, culture, and outdoor brands.</p>
+    </div>
+  </section>
+
+  <section class="mcontact rv" id="mcontact">
+    <h2><span class="mword">Let’s</span> <span class="mword mlime">Build.</span></h2>
+    <a class="memail" href="mailto:hello@alexcarter.dev">hello@alexcarter.dev</a>
+    <div class="mclinks">
+      <a href="tel:+4740000000">+47 400 00 000</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="resume.pdf" target="_blank" rel="noopener" download>Résumé</a>
+    </div>
+  </section>
+
+  <footer class="mfoot">
+    <span>ALL CONTENT OWNED BY ALEX CARTER © 2026. ALL RIGHTS RESERVED.</span>
+    <span>Built in AlexOS, updated for 2026</span>
+  </footer>
+</main>
+
+<!-- Clippy assistant (retro) + modern toast share this node -->
+<div id="clippy">
+  <div class="clip-bubble" id="clipbubble">Hi! I’m <b>Clippy</b> 📎<br>Double-click any icon to explore, or hit <b>⟳ 2026</b> in the taskbar to time-travel.</div>
+  <div class="clip-body" id="clipbody">
+    <div class="clip-eyes"><i></i><i></i></div>
+    <div class="clip-mouth"></div>
+  </div>
+  <button class="clip-x" id="clipx" aria-label="Hide Clippy">✕</button>
+</div>
+
+<!-- Modern hiring toast -->
+<div id="toast">
+  <button id="toastx" aria-label="Close">✕</button>
+  <span>⚡ <b>Hiring or short on time?</b> <a id="toastgo">Skip straight to the work →</a></span>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

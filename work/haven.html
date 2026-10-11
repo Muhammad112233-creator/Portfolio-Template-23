@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haven — Alex Carter · Case Study</title>
+<meta name="description" content="House-hunting that starts with the map and ends with a feeling.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230a8a8a'/%3E%3Ctext x='2' y='13' font-family='monospace' font-size='12' font-weight='bold' fill='%23c6ff3a'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="work.css">
+</head>
+<body>
+<div class="prog"></div>
+<div class="aur" aria-hidden="true"><i></i><i></i></div>
+<nav>
+  <span class="l"><a href="../index.html">← All Work</a></span>
+  <span class="r"><a href="../index.html">Alex Carter</a></span>
+</nav>
+<main class="wrap">
+  <header class="hero">
+    <div class="eye rv">Property Platform · 2023 · Front-End Lead</div>
+    <h1 class="rv">Haven</h1>
+    <p class="tag rv">House-hunting that starts with the map and ends with a feeling.</p>
+    <div class="heroimg rv"><img src="../assets/img/work-haven.jpg" alt="Haven — Property Platform"></div>
+  </header>
+  <div class="meta rv">
+    <div><div class="k">Role</div><div class="v">Front-End Lead</div></div>
+    <div><div class="k">Year</div><div class="v">2023</div></div>
+    <div><div class="k">Sector</div><div class="v">Property Platform</div></div>
+    <div><div class="k">Stack</div><div class="v">React · Maps · Search UX · Performance</div></div>
+  </div>
+  <section class="rv"><h2>Overview</h2><div class="body"><p>Haven is a property platform built around one observation: people do not search for three bedrooms — they search for morning sun and a short walk to the water. As front-end lead I built the map-first browsing experience and the natural-language search behind it.</p></div></section>
+  <section class="rv"><h2>The Challenge</h2><div class="body"><p>Property search is a filter-form monoculture: dropdowns, sliders, despair. We needed to index subjective qualities — light, quiet, vibe — without inventing fake precision, and render 30,000 listings on a map without melting phones.</p></div></section>
+  <section class="rv"><h2>The Process</h2><div class="steps"><div class="step"><span class="n">01</span><h3>Cluster with care</h3><p>A custom clustering layer keeps the map readable at every zoom, with animations choreographed so markers never teleport.</p></div><div class="step"><span class="n">02</span><h3>Honest search</h3><p>Natural-language queries like “sunny balcony near the water” translate into weighted, explainable filters — users see exactly why a home matched.</p></div><div class="step"><span class="n">03</span><h3>Performance as feature</h3><p>List virtualization, image budgets, and a hard 200KB JS ceiling. The fastest property site in its market was a design decision.</p></div></div></section>
+  <section class="rv"><h2>The Outcome</h2><div class="body"><p>Haven launched as the second most-visited property platform in its market within a year. Search-to-listing click-through doubled versus the incumbent pattern library it replaced.</p></div><div class="stats"><div class="stat"><div class="v">30k</div><div class="l">Listings on one living map</div></div><div class="stat"><div class="v">2×</div><div class="l">Search click-through vs. legacy</div></div><div class="stat"><div class="v">200KB</div><div class="l">JavaScript budget, enforced in CI</div></div></div></section>
+  <blockquote class="rv"><p>I found my apartment by typing “quiet, plants, bakery nearby.” What a time to be alive.</p><cite>User feedback, launch week</cite></blockquote>
+  <a class="next" href="sno.html">
+    <span class="k">Next Project</span>
+    <div class="t">Snø</div>
+    <span class="a">View Case Study →</span>
+  </a>
+</main>
+<footer>
+  <span>© 2026 ALEX CARTER. ALL RIGHTS RESERVED.</span>
+  <span>CASE 07/08 · BUILT IN ALEXOS</span>
+</footer>
+<script src="work.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="110" viewBox="0 0 880 110" font-family="monospace">
+  <defs>
+    <linearGradient id="wf1" x1="0" y1="0" x2="880" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="repeat">
+      <stop offset="0" stop-color="#ff004c"/><stop offset="0.25" stop-color="#ffee00"/>
+      <stop offset="0.5" stop-color="#00e676"/><stop offset="0.75" stop-color="#00b0ff"/>
+      <stop offset="1" stop-color="#ff004c"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;880 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="110" fill="#0b0b0c"/>
+  <path d="M0 62 Q 110 38 220 62 T 440 62 T 660 62 T 880 62 V110 H0 Z" fill="url(#wf1)" opacity="0.28">
+    <animateTransform attributeName="transform" type="translate" values="0 0;-220 0;0 0" dur="9s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 74 Q 110 54 220 74 T 440 74 T 660 74 T 880 74 V110 H0 Z" fill="url(#wf1)" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="-220 0;0 0;-220 0" dur="11s" repeatCount="indefinite"/>
+  </path>
+  <text x="440" y="34" text-anchor="middle" font-size="15" fill="#f1efe9">© 2026 · built with ♥, ♫ and 1.21 gigawatts in <tspan fill="#c6ff3a">AlexOS</tspan></text>
+  <text x="440" y="54" text-anchor="middle" font-size="11" fill="#8f8f96">MIT licensed · fork it · make it yours · don’t forget to water your Tamagotchi</text>
+</svg>
